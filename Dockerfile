@@ -2,8 +2,8 @@ FROM node:16
 
 WORKDIR /app
 
-COPY ./ ./
+COPY . .
 
-RUN yarn install
+RUN npm install
 
-CMD ["node","server.js"]
+CMD ["npm", "start"]
